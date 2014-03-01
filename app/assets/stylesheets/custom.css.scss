@@ -1,5 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,cyrillic);
 
+/* links */
+
+$lightGray: #999;
+$white: #fff;
+$grayMediumLight: #eaeaea;
+$gray: #555;
+
 /* typography */
 
 body, h1, h2, h3, h4, h5, h6, p {font-family: 'Open Sans', sans-serif;}
@@ -21,7 +28,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #999;
+  color: $lightGray;
 }
 
 p {
@@ -33,14 +40,13 @@ p {
 
 #logo {
   font-size: 1.7em;
-  color: #fff;
+  color: $white;
   text-transform: uppercase;
   font-weight: bold;
-}
-
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
 }
 
 .navbar {
@@ -52,28 +58,23 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #999;
-}
-
-footer a {
-  color: #555;
-}
-
-footer a:hover {
-  color: #222;
-}
-
-footer small {
-  float: left;
-}
-
-footer ul {
-  float: right;
-  list-style: none;
-}
-
-footer ul li {
-  float: left;
-  margin-left: 10px;
+  border-top: 1px solid $grayMediumLight;
+  color: $lightGray;
+  a {
+    color: $gray;
+    &:hover {
+      color: #222;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
 }
